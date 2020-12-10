@@ -1,0 +1,27 @@
+.header {
+  @include flexCenterX();
+  height: $header-height;
+  position: sticky;
+  top: 0;
+  padding-left: 3.9%;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background-color: $primary-grey;
+  z-index: 30;
+  //width: calc(100% - (#{$sidebar-width} * 2) - #{$main-section-padding} * 2);
+  box-sizing: border-box;
+
+  &__item {
+    @include flexCenterX();
+    //margin-right: 36px;
+
+    .notification {
+      margin-right: 24px;
+    }
+  }
+  .notification-dropdown {
+    top: 40px;
+    right: -12px;
+  }
+
+}

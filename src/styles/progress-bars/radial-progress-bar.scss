@@ -1,0 +1,96 @@
+$diameter: 133px;
+$accent: #3faaff;
+$gray: #f2f6fc;
+$progress: 220; // Угол$progress
+$border: 10px;
+.radial-progress-bar {
+  position: relative;
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+  background-color: $accent;
+  margin: 0 auto;
+
+
+
+  &__text {
+    position: absolute;
+    top: $border;
+    left: $border;
+    width: #{$diameter - 2 * $border};
+    height: #{$diameter - 2 * $border};
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include fontFiraSans();
+    font-weight:600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #768594;
+
+    span:nth-child(1){
+      font-size: 36px;
+      font-weight: 600;
+
+      &:after {
+        content:'LVL';
+        position: absolute;
+        right: 15px;
+        top: 33px;
+        @include fontFiraSans();
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #b6beca;
+      }
+    }
+
+    span:nth-child(2){
+      font-size: 14px;
+      color: #b6beca;
+      font-weight: normal;
+    }
+
+  }
+
+}
+
+.bar-round__blue{
+  position: absolute;
+  content:'';
+  @if $progress > 180 {
+    background-color: $accent;
+  }
+  @if $progress <= 180 {
+    background-color: $gray;
+  }
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+  clip: rect(0, #{$diameter/2}, $diameter, 0);
+  transform-origin: 50% 50%;
+  transform: rotate(260deg);
+  z-index: 1;
+}
+
+.bar-round__grey{
+  position: absolute;
+  background-color: $gray;
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+  clip: rect(0, #{$diameter/2}, $diameter, 0);
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+}

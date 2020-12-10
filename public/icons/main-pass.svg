@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 39" height="39" width="39">
+    <defs>
+        <style>.cls-1{fill:#3faaff;}.cls-2{fill:#d8e1f0;}.cls-3{fill:#fff;}.cls-4{fill:#f2f6fc;}.cls-5{fill:#ff3fca;}
+        </style>
+    </defs>
+    <title>Ресурс 569</title>
+    <g id="Слой_2">
+        <g id="Слой_15" >
+            <circle class="cls-1" cx="20.5" cy="19.5" r="19.5"/>
+            <rect class="cls-2" y="7" width="41" height="28" rx="4" ry="4"/>
+            <rect class="cls-3" y="5" width="41" height="28" rx="4" ry="4"/>
+            <rect class="cls-4" y="6" width="41" height="28" rx="4" ry="4"/>
+            <circle class="cls-5" cx="8.5" cy="20.5" r="2.5"/>
+            <circle class="cls-5" cx="16.5" cy="20.5" r="2.5"/>
+            <circle class="cls-5" cx="24.5" cy="20.5" r="2.5"/>
+            <circle class="cls-5" cx="32.5" cy="20.5" r="2.5"/>
+        </g>
+    </g>
+</svg>

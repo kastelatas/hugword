@@ -1,0 +1,13 @@
+.notification {
+  position: relative;
+
+  &_active {
+    @include make-status-ring($warning, 10px, 10px, -2px, $main-background);
+  }
+
+  .dropdown-menu {
+    right: 0;
+    top: 52px;
+    width: 100%;
+  }
+}

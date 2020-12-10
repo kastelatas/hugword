@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 39">
+    <defs>
+
+    </defs>
+    <title>Ресурс 565</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="Слой_11" data-name="Слой 11">
+            <circle fill="#3faaff"  cx="20.5" cy="19.5" r="19.5"/>
+            <rect fill="#d8e1f0" y="7" width="41" height="28" rx="4" ry="4"/>
+            <rect fill="#fff"  y="5" width="41" height="28" rx="4" ry="4"/>
+            <rect fill="#f2f6fc"  y="6" width="41" height="28" rx="4" ry="4"/>
+            <rect fill="#ff3fca"  x="6" y="11" width="9" height="3" rx="1.5" ry="1.5"/>
+            <rect fill="#ff3fca"  x="9" y="11" width="3" height="10" rx="1.5" ry="1.5"/>
+            <rect fill="#ff3fca"  x="18" y="11" width="17" height="3" rx="1.5" ry="1.5"/>
+            <rect fill="#ff3fca"  x="18" y="18" width="17" height="3" rx="1.5" ry="1.5"/>
+            <rect fill="#ff3fca"  x="6" y="25" width="29" height="3" rx="1.5" ry="1.5"/>
+        </g>
+    </g>
+</svg>

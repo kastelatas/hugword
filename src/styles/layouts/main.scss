@@ -1,0 +1,21 @@
+.main {
+  background-color: $main-background;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  &__section {
+    @include fontFiraSans();
+    @include removeScrollbar();
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    overflow: auto;
+    flex-flow: column;
+    padding: 0 $main-section-padding;
+  }
+
+  &__content {
+    //height: calc(100% - #{$header-height});
+  }
+}

@@ -1,0 +1,19 @@
+.counter {
+  @include flexCenterX();
+  @include fontFiraSans();
+  color: #768594;
+
+  &__btn {
+    font-size: 32px
+    svg {
+      height: 14px;
+      width: 14px;
+      fill: #b8c0cb
+    }
+  }
+
+  &__count {
+    padding: 0 17px;
+    font-size: 30px;
+  }
+}

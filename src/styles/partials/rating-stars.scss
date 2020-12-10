@@ -1,0 +1,10 @@
+.rating-stars {
+ //@include make-rating-stars($height:22px);
+ display: flex !important;
+
+
+ & > span {
+  margin-right: 5px;
+ }
+
+}

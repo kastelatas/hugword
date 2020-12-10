@@ -1,0 +1,30 @@
+
+@mixin make-status-ring($color, $height, $width, $right, $border-color: $white) {
+  &:before {
+    top: 0;
+    right: $right;
+    display: block;
+    content: '';
+    height: $height;
+    width: $width;
+    position: absolute;
+    background-color: $color;
+    border-radius: 50%;
+    border: 2px solid $border-color;
+  }
+}
+
+@mixin make-notice-icon($color, $height, $width, $radius) {
+  & {
+    bottom: -4px;
+    box-sizing: border-box;
+    right: -15px;
+    display: flex;
+    border-radius: $radius;
+    height: $height;
+    width: $width;
+    position: absolute;
+    background-color: $color;
+    border: 4px solid $white;
+  }
+}

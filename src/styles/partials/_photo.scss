@@ -1,0 +1,19 @@
+.photo {
+  width: 108px;
+  height: 118px;
+  flex-grow: 0;
+  border-radius: 5px;
+  position: relative;
+
+  &__img {
+    @include CoverImg();
+    border-radius: 5px;
+  }
+
+  &_add {
+    @include flexCenterXY();
+    background-color: $primary-grey;
+    float:left;
+    z-index: 20;
+  }
+}

@@ -1,0 +1,26 @@
+.tabs {
+  @include flexCenterX();
+  padding-bottom: 22px;
+  border-bottom: 1px solid #dfe2e7;
+
+  &-nav__item {
+    font-size: 16px;
+    line-height: normal;
+
+    &:not(:last-child ) {
+      padding-right:24px;
+      border-right: 2px solid $secondary-text;
+    }
+  }
+
+  &_bottom {
+    border-top: 1px solid #dfe2e7;
+    border-bottom: none;
+    margin-top: 22px;
+    padding: 22px 0 0 0;
+  }
+
+  &__panel {
+
+  }
+}

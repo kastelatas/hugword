@@ -1,0 +1,225 @@
+//
+// Main btn
+
+.btn {
+  display: inline-block;
+  @include fontFiraSans();
+  @include button-variant($text, $primary-color, $primary-color);
+  @include button-size(11px, 25px, 18px, 14px, 3px);
+
+  &_block {
+    width: 100%;
+  }
+
+  &_success {
+    @include button-variant($text, $success, $success);
+    @include button-size(11px, 25px, 18px, 14px, 3px);
+  }
+
+  &_change {
+    @include button-size(11px, 25px, 18px, 14px, 3px);
+    @include button-variant($primary-text, transparentize(#fefefe, 0.35), transparent);
+  }
+
+  &_icon {
+    @include flexCenterXY();
+    height: 40px;
+    padding: 0 25px;
+
+    & > svg {
+      margin-right: 8px;
+    }
+  }
+}
+
+
+//
+// Icon btn
+//
+
+.btn-icon {
+  @include button-clean();
+  border: none;
+
+  svg {
+    display: flex;
+    transition: .3s ease;
+  }
+
+  &:hover {
+    transition: .3s ease;
+
+    svg {
+      fill: $primary-text;
+      transition: .3s ease;
+
+    }
+  }
+
+  &_type_sun {
+    .btn-icon__content {
+      display: flex;
+      padding: 5px;
+      background-color: #9cb4d8;
+      border-radius: 50%;
+    }
+  }
+
+  &_type_message {
+    .btn-icon__content {
+      @include flexCenterXY();
+      width: 34px;
+      height: 34px;
+      border-radius: 3px;
+      background-color: #3faaff;
+      svg {
+        fill: white;
+      }
+    }
+  }
+
+  &_type_shop{
+    .btn-icon__content {
+      @include flexCenterXY();
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+      background-image: linear-gradient(to top, #ff3fca, #ff9dab, #ffb8a0);
+    }
+  }
+
+  &_type_play{
+    .btn-icon__content {
+      @include flexCenterXY();
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #3faaff
+
+    ;
+    }
+  }
+
+  &_type_send{
+    .btn-icon__content {
+      @include flexCenterXY();
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: $primary-color;
+    }
+  }
+
+  &_type_gift {
+    .btn-icon__content {
+      @include flexCenterXY();
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+      background-image: linear-gradient(to top, #0095f6, #3faaff);
+    }
+  }
+
+  &_type_close {
+    .btn-icon__content {
+      @include flexCenterXY();
+      box-sizing: border-box;
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      border: solid 1px #b6beca;
+      background-color: #fefefe;
+    }
+  }
+
+  &_type_edit {
+    .btn-icon__content {
+      @include flexCenterXY();
+      box-sizing: border-box;
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
+      background-color: $white;
+      opacity: .70;
+    }
+  }
+
+  &_type_close-photo{
+    .btn-icon__content {
+      @include flexCenterXY();
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      z-index: 2;
+      box-sizing: border-box;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      border: solid 1px #b6beca;
+      background-color: #fefefe;
+
+      svg {
+        height: 9px;
+        width: 9px;
+      }
+    }
+  }
+
+  &_sm {
+    width: 21px;
+    height: 21px;
+  }
+
+  &_type_add {
+    .btn-icon__content {
+      @include flexCenterXY();
+      height: 44px;
+      width: 44px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      background-color: $secondary-grey;
+      border: solid 1px $secondary-grey;
+    }
+  }
+
+  &_type_add-ring {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: $primary-color;
+    @include flexCenterXY();
+    display: inline-flex;
+
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+//
+// Link
+//
+
+.link {
+  @include link-variant($primary-color)
+}
+
+//
+// Alternate buttons
+//
+.btn-link {
+  box-sizing: border-box;
+  font-size: 18px;
+  @include flexCenterXY();
+  width: 243px;
+  color: white;
+  height: 40px;
+  background-color: $primary-color;
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}

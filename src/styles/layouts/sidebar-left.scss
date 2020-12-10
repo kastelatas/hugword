@@ -1,0 +1,51 @@
+.sidebar-left {
+  @include createSidebar($sidebar-width);
+  padding-left: $page-padding;
+
+  &_colored {
+    box-shadow: -0.1px -2px 40px 0 rgba(227, 230, 237, 0.5);
+    background-color: $secondary-background;
+  }
+
+  &__title {
+    padding: 33px 0 30px;
+    font-size: 20px;
+    color: #768594;
+    text-align: left;
+    max-width: 285px;
+  }
+
+  &__header {
+    @include make-row();
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    padding-left: 13px;
+  }
+
+  &__ltr {
+    direction: ltr;
+  }
+
+  &__content {
+    height: calc( 100% - 72px);
+    overflow-y: auto;
+    @include styledScrollbar();
+    direction: rtl;
+  }
+
+  .tabs-nav {
+    //direction: ltr;
+    margin-bottom: 17px;
+    padding-left: 30px;
+  }
+
+  .input-group {
+    margin: 33px 43px 20px 43px;
+  }
+
+  .contacts-group {
+
+  }
+}
+

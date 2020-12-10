@@ -1,0 +1,58 @@
+.carousel-item {
+  .react-multi-carousel-item {
+    width: 100% !important;
+  }
+
+  &__button-group {
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+
+    .btn-icon {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      border:1px solid rgb(178, 188, 197);
+    }
+
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    .carousel__button-right{
+      right: 10px;
+    }
+
+    .carousel__button-left {
+      left: 10px;
+    }
+  }
+
+  .react-multi-carousel-dot-list {
+    bottom: 11px;
+  }
+
+ .react-multi-carousel-dot button{
+    width:6px;
+    height:6px;
+    background-color: #b6beca;
+    border:none;
+  }
+
+  .react-multi-carousel-dot--active button, .react-multi-carousel-dot button:hover:active {
+    border: solid 2px #3faaff;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+  }
+}
+
+.carousel-item__card img {
+  width: 380px;
+  height: 380px;
+}
+

@@ -1,0 +1,11 @@
+@mixin createSidebar( $width) {
+  @include fontFiraSans();
+  background-color: $main-background;
+  height: 100%;
+  overflow: hidden;
+  //min-width: $sidebar-width;
+  min-width: 360px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  color: $primary-text;
+}

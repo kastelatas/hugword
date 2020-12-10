@@ -1,0 +1,29 @@
+.profile-degree {
+  height: 42px;
+  width: 42px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  @include fontFiraSans();
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #808d9b;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #3faaff;
+  transition: .7s;
+
+  &__text{
+    color: #3faaff;
+    font-size: 8px;
+
+  }
+  &__level{
+    color: #808d9b;
+    font-size: 16px;
+  }
+}

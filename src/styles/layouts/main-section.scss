@@ -1,0 +1,27 @@
+.main-section {
+  @include fontFiraSans();
+  @include removeScrollbar();
+  //width: calc(100% - 359px * 2);
+  //width: calc(100% - 385px * 2);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  overflow: auto;
+  flex-flow: column;
+  padding: 0 10px;
+
+  &__content {
+    display: grid;
+    gap: 5px;
+    //grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(274px, 1fr));
+    justify-items: center;
+
+    //@media (max-width: 1900px) {
+    //  grid-template-columns: repeat(3, 1fr);
+    //  gap: 12px;
+    //}
+  }
+}
+
+//TODO Delete this block

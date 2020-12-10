@@ -1,0 +1,77 @@
+.profile-billing {
+  position: relative;
+  padding-top: 38px;
+
+
+  &__title {
+    color: #768594;
+    display: inline-block;
+    margin-bottom: 38px;
+    font-size: 26px;
+  }
+
+  &__count {
+    font-size: 30px;
+    font-weight: 600;
+    color: #768594;
+    margin-right: 24px;
+    padding-left: 15px;
+  }
+
+  &__subtitle {
+    color: #768594;
+    display: block;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  &__content {
+    margin-right: 43px;
+    max-width:334px;
+  }
+
+  &__lines-row {
+    @include make-row();
+  }
+
+  &__line {
+    @include flexCenterX();
+    margin-bottom: 67px;
+
+    &:nth-child(1){
+      margin-right: 43px;
+      width: 343px;
+      max-width: 334px;
+    }
+
+    > svg {
+      margin-right: 15px;
+    }
+  }
+
+  &__video {
+
+  }
+
+  &__message{
+    color: $secondary-text;
+    font-size: 18px;
+  }
+
+  &__row {
+    @include make-row();
+  }
+
+  &__text {
+    @include fontFiraSansLight();
+    line-height: 1.33;
+    text-align:left;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #768594;
+  }
+}

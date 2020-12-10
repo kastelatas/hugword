@@ -1,0 +1,116 @@
+.person-card {
+
+  &__header {
+    display: flex;
+    width: 254px;
+    height: 254px;
+    @include make-overlay();
+    overflow: hidden;
+    transition: 1s ease;
+    border-radius: 10px 10px 0 0 ;
+
+    &:hover {
+      .person-card__img {
+        transform: scale(1.1);
+        transition: transform 1s ease;
+      }
+    }
+  }
+
+  &__stars-container {
+    @include absoluteX();
+    @include flexCenterX();
+    bottom: 2px;
+    padding-bottom: 20px;
+    z-index: 20;
+
+    & > span {
+      display: flex !important;
+      & > span {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  &__stars-counter {
+    color: $text;
+    font-size: 20px;
+    margin-left: 8px;
+  }
+
+  &__img {
+    transition: transform 1s ease;
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+  }
+
+  &__content {
+    @include make-column();
+    box-sizing: border-box;
+    width: 254px;
+    padding: 31px 24px 32px 24px;
+    background-color: $white;
+    //min-height: 426px;
+    box-sizing: border-box;
+
+    .btn {
+      //margin-top: auto;
+    }
+  }
+
+  &__row {
+    @include flexCenterX();
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-bottom: 22px;
+  }
+
+  &__name {
+    font-size: 20px;
+    color: $primary-text;
+    max-width:150px;
+    word-break: break-all;
+  }
+
+  &__status {
+    @include flexCenterX();
+    color: $secondary-text;
+    &:after {
+      margin-left: 4px;
+      display: block;
+      content: '';
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: $danger;
+    }
+    &_success {
+      &:after {
+        background-color: $success;
+      }
+    }
+  }
+
+
+  &__tags-block {
+    margin-bottom: 27px;
+    min-height: 143px;
+    .tag {
+      margin-bottom: 14px;
+      padding: 5px 6px;
+    }
+  }
+
+  .btn_icon {
+    svg {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__tags-block-title {
+    display: block;
+    color: $secondary-text;
+    margin-bottom: 15px;
+  }
+
+}

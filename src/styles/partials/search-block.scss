@@ -1,0 +1,28 @@
+.search-block {
+  width: 100%;
+  padding: 0 15%;
+  box-sizing: border-box;
+  position: relative;
+  .input-group__prefix {
+    left: -2px;
+    z-index: 20;
+  }
+
+  &__content {
+    height: 86px;
+    width: 100%;
+    //max-width: 819px;
+    padding: 23px;
+    box-sizing: border-box;
+    box-shadow: 0 12px 50px 0 #e3e6ed;
+    background-color: #ffffff;
+  }
+
+  .css-g1d714-ValueContainer {
+    padding-left: 20px;
+  }
+
+  .input-group .select__control {
+    border-radius: 0;
+  }
+}

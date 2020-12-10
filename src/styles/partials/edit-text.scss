@@ -1,0 +1,25 @@
+.edit-text {
+    @include fontFiraSansLight();
+    color:$primary-text;
+    line-height: 1.33;
+
+    & + .btn-icon {
+        margin-left: 8px;
+    }
+
+    > .btn-icon {
+        position: relative;
+        top: -2px;
+        margin-left: 6px;
+    }
+
+    &_text_bold {
+        @include fontFiraSans();
+        font-weight: 500;
+    }
+
+    &_type_input {
+        line-height: normal;
+        border: none;
+    }
+}

@@ -1,0 +1,167 @@
+
+
+.flex-jcc {
+  justify-content: center;
+}
+
+.flex-aic {
+  align-items:center;
+}
+
+.mx-height {
+  max-height: 400px;
+}
+
+.profile-achievement {
+  margin-top: 2rem;
+  display: flex;
+  overflow-y: scroll;
+  width: inherit;
+  @include  styledScrollbar();
+
+  &__row {
+    @include make-row();
+    flex-wrap: wrap;
+  }
+
+   &__container {
+     padding: 0 10px;
+   }
+
+  .overlay-progress {
+    flex-basis: 512px;
+    margin-right: 56px;
+    margin-left: 35px;
+  }
+ }
+
+.achievements-block {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: solid 1px #dfe2e7;
+  background-color: #ffffff;
+  margin-right: 18px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+
+  &:hover {
+    box-shadow: 0px 10px 18px 0 rgba(237, 240, 247, 0.9);
+    transition: all .3s;
+    cursor: pointer;
+  }
+
+  &__achiv-img {
+    width: 85px;
+    height: 85px;
+    border: solid 0 #171717;
+    background-color: #e7ebf1;
+    border-radius:50%;
+    margin-bottom: 1.3rem;
+  }
+
+  &__achiv-text {
+    @include fontFiraSans();
+    font-family: 'Fira Sans Medium';
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform:uppercase;
+    color: #768594;
+  }
+
+  .blue {
+    background: #9cb4d8;
+  }
+
+  &__achiv-text {
+    @include fontFiraSans();
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #768594;
+  }
+
+  .radialProgressBar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #9cb4d8;
+    margin: 10px;
+  }
+  .radialProgressBar .overlay {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+
+  }
+  .progress-10 {
+    backgrounde: #f2f6fc;
+    background-image:linear-gradient(-109deg,#3faaff 31%,#ddd 0),linear-gradient(112deg,#ddd 50%,transparent 0);
+  }
+
+  &__hover {
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity:0;
+    transition: all .3s;
+
+    &:hover {
+      opacity: 1;
+      transition: all .3s;
+    }
+  }
+}
+
+.achievement-block__achiv-text {
+  @include fontFiraSans();
+  font-family: 'Fira Sans Medium';
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform:uppercase;
+  color: #768594;
+}
+
+.achievement-block__achiv-text-hover {
+  @include fontFiraSans();
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #768594;
+}
+
+

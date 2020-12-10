@@ -1,0 +1,33 @@
+.dropdown-menu {
+  @include fontFiraSans();
+  top: 36px;
+  font-weight: 600;
+  position: absolute;
+  @include make-column();
+  background-color: $white;
+  padding: 26px;
+  box-shadow: -0.1px -2px 40px 0 rgba(227, 230, 237, 0.5);
+  z-index: 90;
+  box-sizing: border-box;
+  right: 0;
+  min-width: 212px;
+  display: none;
+
+  &_show {
+    display: flex;
+  }
+
+  &__item {
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $primary-text;
+  }
+}
+

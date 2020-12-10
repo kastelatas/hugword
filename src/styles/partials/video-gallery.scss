@@ -1,0 +1,21 @@
+.video-gallery {
+  //display: flex;
+  //display: flow-root;
+
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__content {
+    //display: grid;
+
+    flex-flow: nowrap;
+    gap: 34px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .video_add_float {
+    float: none;
+  }
+}

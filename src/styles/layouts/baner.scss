@@ -1,0 +1,58 @@
+.banner {
+  @include fontFiraSans();
+  display: flex;
+  width: 100%;
+  //height: 502px;
+  height:326px;
+  background-color: #3faaff;
+  position: relative;
+  //background-image: url("/PHOTO.png");
+  background-size: cover;
+  color: $text;
+
+  &__img {
+    @include CoverImg();
+  }
+
+  &__content {
+    @include make-column();
+    text-align: center;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 42px;
+
+    > h1 {
+      @include fontSunday();
+      font-size: 100px;
+      letter-spacing: 5px;
+    }
+
+    > h2 {
+      @include fontSunday();
+      font-size: 66px;
+      letter-spacing: 3.3px;
+      text-transform: unset;
+      margin-bottom: 38px;
+      line-height: 60px;
+    }
+
+    > h3 {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    @include fontFiraSansSemiBolt();
+    font-size: 20px;
+
+    &:nth-child(4) {
+      margin-bottom: 4px;
+    }
+  }
+
+
+}

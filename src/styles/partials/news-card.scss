@@ -1,0 +1,37 @@
+.news-card {
+  @include fontFiraSans();
+  color: $primary-text;
+
+  &__img {
+    height: 300px;
+    margin-bottom: 17px;
+
+    > img {
+      @include CoverImg();
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.71;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+
+  }
+
+  &__date {
+    color: $secondary-text;
+    padding: 14px 0 12px 0;
+  }
+
+  &__action {
+    padding-top: 15px;
+    .btn {
+      width: 200px;
+      text-align: center;
+    }
+  }
+}

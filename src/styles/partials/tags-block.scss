@@ -1,0 +1,16 @@
+.tags-block {
+  @include make-row();
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: -6px 0 0 -6px;
+
+  .tag {
+    flex-grow: 1;
+
+    /*&:nth-child(2n - 1)  {
+      flex-grow: 1;
+
+    }*/
+    margin: 6px;
+  }
+}

@@ -1,0 +1,22 @@
+.progress-bar {
+  height: 20px;
+  width: 100%;
+  background-color: #f2f6fc;
+  border-radius: 10px;
+
+  &__bar {
+    background-color: $primary-color;
+    border-radius: 10px;
+    height: 20px;
+    @include flexCenterX();
+    justify-content: flex-end;
+  }
+
+  &__text {
+    @include fontFiraSansLight();
+    font-size: 14px;
+    color: $white;
+    text-align: right;
+    padding-right: 8px;
+  }
+}

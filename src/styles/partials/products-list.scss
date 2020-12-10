@@ -1,0 +1,11 @@
+.products-list {
+  @include make-row();
+  margin-top: 18px;
+  margin-bottom: 61px;
+
+  flex-wrap: wrap;
+  max-height: 800px;
+  overflow: scroll;
+  @include  styledScrollbar();
+}
+

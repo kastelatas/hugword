@@ -1,0 +1,48 @@
+.statistics {
+  margin-top: 69px;
+
+  svg {
+    width: 54px;
+    height: 54px;
+  }
+
+
+  .statistics-block {
+    width: 22%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    margin-right: 43px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    .counter {
+      @include fontFiraSansMedium();
+      font-size: 30px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #768594;
+      margin-top: 18px;
+    }
+
+    .statistic-title {
+      @include fontFiraSans();
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #b6beca;
+    }
+  }
+
+}

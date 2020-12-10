@@ -1,0 +1,57 @@
+.comment {
+  @include fontFiraSans();
+  width: 314px;
+  color: $primary-text;
+
+  &__header {
+    display: flex;
+    margin-bottom: 16px;
+
+    .ava {
+      margin-right: 16px;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding-top: 4px;
+    @include make-column();
+    justify-content: space-between;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+
+  &__name {
+    color: $primary-text;
+  }
+  &__date {
+    @include fontFiraSansLight();
+    color: $secondary-text;
+
+  }
+
+  &__text {
+    @include fontFiraSansLight();
+    line-height: 23px;
+    word-break: break-all;
+  }
+  
+  &__atantion {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #c6cdd7;
+    color: #c6cdd7;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    left: 154px;
+    top: 27px;
+  }
+}

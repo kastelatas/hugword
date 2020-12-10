@@ -1,0 +1,106 @@
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0);
+    display: none;
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    display: block;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+
+@keyframes fadeOutUp {
+  from {
+    transform: translate3d(0,40px,0);
+    opacity: 1
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity:0;
+    display: none;
+  }
+}
+
+.animatedfadeOutUp {
+  opacity:1
+}
+
+.fadeOutUp {
+  opacity: 1;
+  animation-name: fadeOutUp;
+  -webkit-animation-name: fadeOutUp;
+}
+
+
+
+
+.push-card {
+  width: 360px;
+  //height: 186px;
+  border-radius: 10px;
+  color: $text;
+  padding: 34px 32px;
+  box-sizing: border-box;
+  background-color: $white;
+
+  & + & {
+    margin-top: 10px;
+  }
+
+  &__content {
+    @include make-row();
+    align-items: center;
+    margin-bottom: 15px;
+    .ava {
+      margin-right: 21px;
+    }
+  }
+
+  &__wrap {
+    @include make-column();
+  }
+
+  &__title {
+    color: $primary-text;
+    font-size: 20px;
+    padding-bottom: 14px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: $secondary-text;
+  }
+
+  &__row {
+    @include make-row();
+    align-items: center;
+    justify-content: space-between;
+
+    .push-card__text {
+      color: $primary-text;
+      margin-right: 17px;
+    }
+  }
+}

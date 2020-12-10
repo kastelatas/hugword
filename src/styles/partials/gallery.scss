@@ -1,0 +1,16 @@
+.gallery {
+  overflow: hidden;
+  @include make-row();
+  flex-wrap: wrap;
+  //display: grid;
+  //gap: 13px 34px ;
+  //grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  justify-items: center;
+  align-items: center;
+  margin: -5px 0 0 -14px;
+
+  .photo {
+    margin: 5px 14px;
+    flex-shrink: 0;
+  }
+}

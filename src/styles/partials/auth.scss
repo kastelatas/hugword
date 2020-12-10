@@ -1,0 +1,28 @@
+.auth {
+  @include fontFiraSans();
+  position: relative;
+  @include flexCenterX();
+  color: $secondary-text;
+  cursor: pointer;
+
+  .ava {
+    margin-right: 16px;
+  }
+
+  &__name {
+    font-size: 20px;
+    color: $primary-text;
+    margin-bottom: 7px;
+  }
+
+  &__status-marked {
+    color: $accent;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  &__wrapper {
+    @include make-column();
+    margin-right: 12px;
+  }
+}

@@ -1,0 +1,125 @@
+.input-group {
+  @include flexCenterX();
+  @include fontFiraSans();
+  position: relative;
+
+  &_block, &__block {
+    width: 100%;
+    .select__control {
+      width: 100%;
+    }
+  }
+
+  &__icon {
+    margin-right: 20px;
+
+    svg {
+      width: 39px;
+      height: 39px;
+    }
+  }
+
+  &__invalid {
+    display: flex;
+    align-self: flex-start;
+    color: $danger;
+    font-size: 12px;
+    text-align: left;
+    padding-top: 4px;
+  }
+
+  .select__control {
+    padding: 2px 0 !important;
+
+    .select__multi-value {
+      margin: 0;
+    }
+    .select__multi-value__label {
+      @include fontFiraSansLight();
+      font-size: 16px;
+      padding: 0 3px;
+    }
+  }
+
+  .select__menu {
+    @include fontFiraSansLight();
+    text-align: left;
+  }
+
+  .select__control,
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid $input-border;
+    @include fontFiraSansLight();
+    padding: 10px 0;
+    color: $primary-text;
+    transition: .2s ease;
+
+    &:focus, &:active {
+      border-color: $input-border-hover;
+    }
+  }
+
+  &_icon_left {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+      width: 100%;
+      padding-left: 40px;
+    }
+
+    .input-group__prefix {
+      position: absolute;
+      left: 10px;
+    }
+  }
+
+
+  &__prefix {
+
+  }
+
+  &__append {
+    margin-left: 23px;
+  }
+
+  &_accent {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      border-radius: 3px;
+      background-color: $secondary-grey;
+      border: transparent;
+      padding: 13px 10px;
+      color: $secondary-text;
+
+      &::-webkit-input-placeholder {
+        text-align: center;
+        @include fontFiraSansLight();
+      }
+
+      &::-ms-input-placeholder {
+        text-align: center;
+        @include fontFiraSansLight();
+      }
+
+      &::-moz-placeholder {
+        text-align: center;
+        @include fontFiraSansLight();
+      }
+    }
+
+    .input-group__append {
+      margin-left: 11px;
+    }
+  }
+
+  & + & {
+    margin-top: 30px;
+  }
+
+}
+

@@ -1,0 +1,10 @@
+.empty-state {
+  text-align: left;
+  font-size: 22px;
+  color: $secondary-grey;
+
+  &_centered {
+    @include absoluteXY()
+    font-size: 42px;
+  }
+}

@@ -1,0 +1,40 @@
+$main-background: #f6f8fc;
+$secondary-background: #f2f6fc;
+
+$success: #65e18e;
+$warning: #ff3fca;
+$notice: #ffcf65;
+$accent: #9cb4d8;
+
+$danger: #dc3545;
+
+$primary-color: #3faaff;
+$primary-color-white: #fff;
+
+$primary-grey: #f6f8fc;
+$secondary-grey: #e7ebf1;
+
+$white: #ffff;
+
+$text: #ffff;
+$primary-text: #768594;
+$secondary-text: #b6beca;
+$secondary-text-grey: #7a8897;
+
+$input-border:#e3e6ed;
+$input-border-hover:#768594;
+
+$header-height: 74px;
+$page-padding: 12px;
+$main-section-padding:10px;
+
+$sidebar-width: 385px;
+$profile-banner-height: 187px;
+
+$theme-colors: (
+        "primary":    $primary-color,
+        "success":    $success,
+        "accent":       $accent,
+        "warning":    $warning,
+        "notice":     $notice,
+) !default;

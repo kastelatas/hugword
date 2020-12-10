@@ -1,0 +1,52 @@
+.article {
+ padding: 21px 53px;
+ h2 {
+  @include fontSunday();
+  font-size: 36px;
+  margin-bottom: 41px;
+  color: #768594;
+  text-align:center;
+ }
+
+ p,ul,ol {
+  @include fontFiraSans();
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: $primary-text;
+  line-height: 1.67;
+ }
+
+ a {
+  color: #028fff;
+  text-decoration: underline;
+  line-height: 1.67;
+ }
+ p,ul,ol {
+  margin-bottom: 20px;
+ }
+
+ ul,ol {
+  padding-left: 15px;
+ }
+
+ ul {
+  list-style: disc;
+ }
+
+ ol {
+  list-style: decimal;
+  position: relative;
+
+  li:after {
+   content:')';
+   position: absolute;
+   left: 7px;
+  }
+ }
+
+}
+

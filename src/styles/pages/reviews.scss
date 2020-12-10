@@ -1,0 +1,160 @@
+.reviews {
+  box-shadow: -0.1px -2px 40px 0 rgba(227, 230, 237, 0.5);
+  background-color: #ffffff;
+
+
+
+  &__header {
+    height: 187px;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    &-name {
+      @include fontFiraSans();
+      font-size: 26px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    &-col {
+      margin-left: 22px;
+    }
+  }
+
+  .profile-degree {
+    position: relative;
+    top: 6px;
+    margin-left: 15px;
+  }
+
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+
+  &__img-cont {
+     img {
+       border-radius:60px;
+       width: 148px;
+       height: 148px;
+     }
+  }
+
+  &__row {
+    @include make-row();
+    justify-content: space-between;
+  }
+
+  &__row-abs{
+    position: absolute;
+    width: 100%;
+    top: 24px;
+    left: 38px;
+  }
+
+  &__col {
+    @include make-row();
+    align-items: flex-end;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 5px;
+    right: 70px;
+    z-index: 20;
+  }
+
+  &__text {
+    @include fontFiraSans();
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #7a8897;
+  }
+
+  &__list {
+    height: calc(78.6vh - 253px);
+    overflow-y: scroll;
+    background: #fff;
+    @include styledScrollbar();
+
+  }
+
+  &__pd-content {
+    padding: 33px 46px;
+
+
+  }
+
+  &__row-pd {
+    padding-bottom: 0;
+  }
+
+  .comment {
+    width: 100%;
+    margin-bottom: 31px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #dfe2e7;
+
+    &__wrapper {
+      //margin-left:26px;
+      position: relative;
+    }
+
+    .ava {
+      position: relative;
+    }
+
+    .profile-degree {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 18px;
+    }
+
+    &__text {
+      color: rgba(118, 133, 148,0.8);
+      @include fontFiraSans();
+    }
+  }
+
+  &__btn-block {
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: center;
+    .btn {
+      width: 243px;
+      box-sizing: border-box;
+    }
+
+  .btn:nth-child(1){
+    margin-right: 10px;
+    background: #ffffff;
+    color: #3faaff;
+    border:2px solid #3faaff;
+  }
+  }
+}

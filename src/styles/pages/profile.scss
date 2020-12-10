@@ -1,0 +1,443 @@
+.profile {
+  @include fontFiraSans();
+  @include make-column();
+  height: calc(100% - 72px);
+  overflow: hidden;
+
+  .profile__ava-container {
+    top: -17px;
+  }
+
+
+  &_type_user {
+    .edit-text {
+      max-width: 871px;
+    }
+
+    .profile__person-block {
+      top: 109px;
+
+
+
+    }
+
+    .profile__person {
+      @include flexCenterX();
+      @include make-column();
+      height: auto;
+      width: 157px;
+
+
+
+    }
+
+    .profile__ava-container {
+      top: 14px;
+    }
+
+
+
+    .profile__about {
+      padding-left: 199px;
+      min-height:175px;
+
+
+    }
+    .ava {
+      transform: scale(1);
+      transition: .7s ease;
+    }
+  }
+
+  &__header {
+    position: relative;
+    height: $profile-banner-height;
+    box-sizing: border-box;
+    @include make-overlay();
+
+    .btn-icon_type_close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      z-index: 20;
+    }
+
+    .btn_change {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+
+  &__img {
+    @include CoverImg();
+  }
+
+  &__aside{
+    @include make-column();
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+
+    .btn {
+      width: 228px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__about {
+    box-sizing: border-box;
+    display: flex;
+    min-height: 374px;
+    width: 100%;
+    //margin-bottom: 39px;
+
+    .stars {
+      margin-bottom: 55px;
+    }
+
+    &_pad {
+      //padding-left: calc(238px + 43px);
+
+      /*.profile__person {
+        margin-right: 34px;
+        width: auto;
+        height: auto;
+      }*/
+
+
+    }
+  }
+
+  &__person-block {
+    display: flex;
+    position: absolute;
+    top: 43px;
+    z-index: 10;
+    padding-left: 43px;
+    pointer-events: none;
+
+    .btn {
+      pointer-events: visible;
+    }
+  }
+
+
+
+  &__ava-container {
+    position: relative;
+
+    .btn-icon_type_edit {
+      z-index: 40;
+      @include absoluteXY();
+      pointer-events: visible;
+    }
+  }
+
+  &__degree-block {
+    position: absolute;
+    right: 6px;
+    top: 110px;
+  }
+
+  .gallery {
+    display: block;
+    //margin-bottom: 40px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+
+    .react-multi-carousel-track {
+      transform: translate3d(0, 0px, 0px);
+      width: auto;
+    }
+
+
+  }
+
+  &__block-rate {
+    h3 {
+      padding-bottom: 10px;
+      padding-top: 60px;
+    }
+
+    .profile__row {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    @include fontFiraSans();
+    font-size: 20px;
+    color: $primary-text;
+    padding: 40px 0 30px 0;
+
+    &_colored {
+      color: $white;
+    }
+  }
+
+  &__text {
+    @include fontFiraSansLight();
+    font-size: 18px;
+    line-height: 1.33;
+    color: $primary-text;
+    margin-bottom: 32px;
+    word-break: break-all;
+  }
+
+  &__col {
+    @include make-column();
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__user-name {
+    @include fontFiraSansLight();
+    display: inline-block;
+    color: $secondary-text;
+    margin-bottom: 8px;
+  }
+
+  &__status {
+    text-transform: uppercase;
+    color: $accent;
+    font-size: 18px;
+  }
+
+  &__status-icons {
+    display: flex;
+
+    .achiev-icon {
+      & + .achiev-icon {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &__name {
+    @include fontFiraSans();
+    font-size: 26px;
+    color: $white;
+    margin-bottom: 11px;
+  }
+
+  .edit-text {
+    //margin-bottom: 20px;
+    line-height: 23px;
+    text-align: justify;
+    word-break: break-all;
+  }
+
+  .profile-settings__form {
+    max-width: 490px;
+  }
+
+  textarea {
+    resize:none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  &__person {
+    width: 238px;
+    height: 560px;
+    flex-shrink: 0;
+    margin-right: 43px;
+    position: relative;
+    transition: .7s ease;
+    top: 0;
+
+    &_hide {
+      opacity: 0;
+      transition: .7s ease;
+      height: 0;
+      width: 0;
+      
+    }
+
+    &_show {
+      display: none;
+      opacity: 0;
+      transition: .3s ease;
+    }
+
+    &_top {
+      top: -125px;
+      transition: .7s ease;
+
+      .profile__degree-block {
+        right: 6px;
+        top: 100px;
+      }
+
+      .profile__status-icons {
+        display: none
+      }
+
+      .ava {
+        transform: scale(0.7);
+        transition: .7s ease;
+      }
+
+      .profile__user-name,
+      .profile__status {
+        color: $white;
+      }
+
+    }
+
+    .btn_change {
+      @include absoluteX();
+      bottom: 22px;
+      position: absolute;
+    }
+  }
+
+  .ava_rectangle {
+    position: relative;
+    .btn_change {
+      @include absoluteX();
+      bottom: 19px;
+      position: absolute;
+    }
+  }
+
+  &__decription {
+    @include flexCenterX();
+    margin-bottom: 38px;
+    color: $secondary-text;
+  }
+
+  &__decription-mark {
+    color: $primary-text;
+  }
+
+  &__decription-text {
+  }
+
+  &__content {
+    flex-grow: 2;
+    @include styledScrollbar();
+    //@include removeScrollbar();
+    overflow-y: auto;
+    padding: 0 43px;
+    font-size: 18px;
+    //height: 72.0918vh;
+    background-color: $white;
+    padding-bottom: 40px;
+  }
+
+  &__icon {
+    margin-right: 13px;
+  }
+
+  &__wrapper {
+    @include make-row();
+    height: calc( 100% - #{$profile-banner-height});
+  }
+
+  &__action {
+    @include make-row();
+    margin-bottom: 40px;
+    .btn_block + .btn_block {
+      margin-left: 34px;
+    }
+  }
+
+  .tags-block {
+    //margin-bottom: 40px;
+
+    .btn-icon_type_add-ring {
+      margin: 8px;
+    }
+
+    .tag {
+      flex-grow: 0;
+    }
+  }
+
+  &__present {
+    @include make-row();
+    @include flexCenterX();
+    flex-flow: wrap;
+
+    .ava_lg, .ava {
+      margin-right: 27px;
+    }
+  }
+
+  &__comments {
+    padding-left: 28px;
+    background-color: $white;
+    box-sizing: border-box;
+    min-width: 386px;
+  }
+
+  &__comments-title {
+    padding-top: 33px;
+    font-size: 20px;
+    color: $primary-text;
+    padding-bottom: 32px;
+  }
+
+  &__row {
+    @include make-row();
+    justify-content: space-between;
+
+  }
+
+  &__fix-row {
+    margin-bottom: 30px;
+    margin-top: -52px;
+    height: 92px;
+    align-items: flex-end;
+
+    .btn {
+      height: 40px;
+      box-sizing: border-box;
+    }
+  }
+
+  &__row-settings {
+    .btn {
+      width: 200px;
+      height: 40px;
+    }
+  }
+
+  &__mx-w {
+    max-width:500px;
+  }
+
+  .btn_mx-w {
+    width:168px;
+
+
+    &:last-child{
+      margin-left: auto;
+    }
+  }
+
+  &__comments-content {
+    box-sizing: border-box;
+    overflow-y: auto;
+    //height: calc(100% - 344px);
+    padding-right: 54px;
+    height: 285px;
+    @include make-column();
+    //justify-content: space-between;
+    @include styledScrollbar();
+
+    .comment:not(:last-child) {
+      margin-bottom: 17px;
+    }
+  }
+
+  .profile__person .ava {
+    margin: 0 auto;
+  }
+
+
+}

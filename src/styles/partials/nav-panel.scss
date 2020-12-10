@@ -1,0 +1,5 @@
+.nav-panel {
+  @include make-row();
+  justify-content: space-between;
+  padding: 39px 0 36px 0;
+}

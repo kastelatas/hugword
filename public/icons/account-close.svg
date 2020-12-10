@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+    <defs>
+        <style>.cls-1{fill:#fff;}.cls-2{fill:#ff5bd2;}</style>
+    </defs>
+    <g>
+        <g>
+            <circle class="cls-1" cx="10" cy="10" r="10"/>
+            <rect class="cls-2" x="5" y="9" width="10" height="2" rx="1" ry="1"
+                  transform="translate(-4.14 10.06) rotate(-45.23)"/>
+            <rect class="cls-2" x="9" y="5" width="2" height="10" rx="1" ry="1"
+                  transform="translate(-4.14 10.06) rotate(-45.23)"/>
+        </g>
+    </g>
+</svg>

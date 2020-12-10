@@ -1,0 +1,24 @@
+.tabs-nav {
+  @include fontFiraSansSemiBolt();
+
+  &__container {
+    @include make-row()
+  }
+
+  &__item {
+    color: $primary-text;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    &_active {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+
+
+}

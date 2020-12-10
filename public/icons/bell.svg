@@ -1,0 +1,9 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25"  fill="#b2bcc5">
+    <g>
+        <g id="bell">
+            <rect x="8" y="23" width="8" height="2" rx="1" ry="1"/>
+            <path d="M24,21a4.94,4.94,0,0,0-1-3c-1-1-2-4-2-4V7s0-7-8-7H12V2h3s4,1,4,5v6a11.91,11.91,0,0,0,2,6H12v2Z"/>
+            <path d="M0,21a4.94,4.94,0,0,1,1-3c1-1,2-4,2-4V7s0-7,8-7h1V2H9S5,3,5,7v6a11.91,11.91,0,0,1-2,6h9v2Z"/>
+        </g>
+    </g>
+</svg>

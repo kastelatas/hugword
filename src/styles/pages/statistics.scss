@@ -1,0 +1,101 @@
+.statistics-page {
+  position: relative;
+  padding: 56px 67px 0 67px;
+
+  > .btn-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  &__col {
+    @include make-column()
+    //width: 100%;
+
+    &:first-child {
+      margin-right: 138px;
+    }
+
+    &:last-child {
+    }
+  }
+
+  &__row {
+    @include make-row();
+  }
+
+  &__line {
+    @include flexCenterX();
+    @include fontFiraSansLight();
+    color: $secondary-text;
+    font-size: 18px;
+
+    .edit-text {
+      margin-left: 8px;
+    }
+
+    & + & {
+      margin-top: 25px;
+    }
+
+    > svg {
+      margin-right: 19px;
+    }
+
+    i {
+      @include fontFiraSans();
+      color: $primary-text;
+      font-size: 20px;
+    }
+  }
+
+  &__message {
+    @include fontFiraSansLight();
+    color: $secondary-text;
+    font-size: 18px;
+  }
+
+  &__count {
+    font-size: 18px;
+    font-weight: 600;
+    color: #768594;
+    margin-right: 24px;
+    padding-left: 15px;
+  }
+
+  &__title {
+    color: #768594;
+    display: inline-block;
+    margin-bottom: 38px;
+    font-size: 26px;
+  }
+
+  &__line-text {
+    color: #7a8897;
+    font-size: 20px;
+  }
+
+  &__line-text-light {
+    @include fontFiraSansLight();
+    font-size: 20px;
+    margin-right: 21px;
+    color: #b6beca;
+  }
+
+
+
+  .counter {
+    margin-right: 21px;
+  }
+}
+
+.helper {
+  background-color: $primary-color;
+  @include flexCenterXY();
+  height: 28px;
+  width: 28px;
+  flex-shrink: 1;
+  border-radius: 50%;
+  color: $white;
+  cursor:pointer
+}

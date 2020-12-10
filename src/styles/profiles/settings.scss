@@ -1,0 +1,55 @@
+.profile-settings{
+  @include fontFiraSansLight();
+  height: 100%;
+  background-color: $white;
+
+  &__title {
+    color: #768594;
+    display: inline-block;
+    margin-bottom: 38px;
+    font-size: 26px;
+  }
+
+  &__row {
+    @include make-row();
+  }
+
+  &__grid {
+    &:first-child {
+      margin-right: 84px;
+    }
+  }
+
+  &__action {
+    padding-top: 40px;
+    @include make-row();
+    max-width: 365px;
+
+    > .btn:first-child {
+      margin-right: 19px;
+    }
+  }
+
+  .switch-container {
+    @include flexCenterX();
+
+    &:not(:first-child) {
+      padding-left: 60px;
+      margin-top: 4px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 24px;
+    }
+
+    > svg {
+      margin-right: 20px;
+    }
+
+    &__text {
+      color: $secondary-text;
+      font-size: 18px;
+      margin-right: auto;
+    }
+  }
+}

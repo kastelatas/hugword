@@ -1,0 +1,42 @@
+.achiev-icon {
+  height: 37px;
+  width: 37px;
+  @include flexCenterXY();
+  background-color: #f2f6fc;
+  position: relative;
+  border-radius: 50%;
+
+  > svg {
+    fill: rgba(227, 230, 237, 0.5);
+    z-index: 2;
+
+  }
+
+  &_gold {
+    background-color: #fde6a2;
+
+    > svg {
+      fill: #eba221;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      @include absoluteXY();
+      z-index: 1;
+      background-color: #ffcf65;
+      border-radius: 50%;
+      height: 29px;
+      width: 29px;
+    }
+  }
+
+  &_platinum {
+
+  }
+
+  &_blue {
+
+  }
+
+}

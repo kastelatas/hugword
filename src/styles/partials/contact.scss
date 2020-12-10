@@ -1,0 +1,86 @@
+.contact-wrapper {
+  position: relative;
+
+  &:hover {
+    .btn-icon {
+      display: block;
+    }
+  }
+
+  > .btn-icon {
+    @include absoluteY();
+    left: 7px;
+    display: none;
+  }
+}
+
+.contact {
+  @include flexCenterX();
+  direction: ltr;
+  @include fontFiraSans();
+  padding: 20px 20px 20px 30px;
+  cursor: pointer;
+
+  &_active {
+    background-color: #e8edf3;
+  }
+
+  &:hover {
+    background-color: #e8edf3;
+  }
+
+  & + & {
+    margin-top: 7px;
+  }
+
+  .ava {
+    margin-right: 14px;
+  }
+
+  &__title {
+    font-size: 20px;
+    color: $primary-text;
+    margin-bottom: 14px;
+  }
+
+  &__message {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 173px;
+    color: $secondary-text;
+  }
+
+  &__content {
+    margin-right: auto;
+  }
+
+  &__date {
+    color: $secondary-text;
+  }
+
+  &__info {
+    @include make-column();
+    align-items: end;
+
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+
+    .counts {
+      margin-bottom: 8px;
+    }
+  }
+
+
+}
+
+.counts {
+  @include fontFiraSans();
+  height: 26px;
+  width: 26px;
+  @include flexCenterXY();
+  background-color: $primary-color;
+  border-radius: 50%;
+  color: $white;
+}

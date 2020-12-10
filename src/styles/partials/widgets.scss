@@ -1,0 +1,140 @@
+.widget {
+  background: #ffffff;
+  padding: 36px 27px 24px 27px;
+  border-radius: 10px;
+  margin: 5px;
+  box-sizing:border-box;
+
+  &__title {
+    @include fontFiraSans();
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #7a8897;
+    margin-bottom: 15px;
+  }
+
+  &__row {
+    @include make-row();
+    align-items: center;
+  }
+
+  &__col {
+    position: relative;
+  }
+
+  &__tooltip {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: #f6f8fc;
+    border-radius: 50%;
+    font-family: Fira Sans,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #b8c0cb;
+    right: -38px;
+    top: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__points {
+    @include fontFiraSansLight();
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #b6beca;
+    margin-left: 14px;
+
+    span:nth-child(1){
+      @include fontFiraSansMedium();
+      font-size: 20px;
+      font-weight: 500;
+      color: #768594;
+    }
+    span:nth-child(2){
+      @include fontFiraSansMedium();
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+
+  &_type_settings{
+    margin-left: 0;
+
+  }
+
+  &_type_billing  {
+    height: 100%;
+
+    .widget__row {
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .widget__col {
+      @include make-row();
+      align-items: center;
+    }
+  }
+
+  &_type_statistics {
+    //max-width:295px;
+    width:295px;
+    //height: 517px;
+    //margin-top: 0;
+    //margin-left: 0;
+    //margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 500px;
+  }
+}
+
+.widget-level {
+  //max-width:457px;
+  //width: 457px;
+  //margin-top: 0;
+  //margin-left: 0;
+}
+
+.widget-billing {
+  //max-width:457px;
+  //width: 457px;
+  //margin-left: 0;
+  //height: 100%;
+
+  .widget__row {
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .widget__col {
+    @include make-row();
+    align-items: center;
+  }
+}
+
+.widget-setting {
+  //max-width:457px;
+  //width: 457px;
+  margin-left: 0;
+}

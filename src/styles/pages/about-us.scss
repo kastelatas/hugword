@@ -1,0 +1,220 @@
+.about-page {
+
+
+  &__title {
+    @include fontSunday();
+    font-size: 36px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-align: center;
+    color: #768594;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    @include fontFiraSans();
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    max-width:341px;
+    text-align: center;
+    color: #768594;
+    margin:17px auto 62px auto;
+  }
+
+  &__img-row {
+    @include  make-row();
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+
+    //width: 100%;
+    //display: grid;
+    //grid-auto-rows: 280px; /* задается высота для всех последующих рядов */
+    //grid-gap: 4px; /* задается отступ для колонок */
+    //grid-template-columns: repeat(auto-fit,27.4% 24% 15.7% 32.33% 30% 40% 30% );
+    //grid-auto-flow: dense;
+    //grid-template-columns: repeat(300px 270px 158px 390px 380px 460px  282px); /* задается ширина для колонок */
+
+
+  }
+
+  &__row-cont {
+
+  }
+
+  &__row{
+    @include  make-row();
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__img-block:nth-child(7n+1){
+    width: 28.4%;
+  }
+
+  &__img-block:nth-child(7n+2){
+    width: 24%;
+  }
+
+  &__img-block:nth-child(7n+3){
+    width: 14.7%;
+  }
+
+  &__img-block:nth-child(7n+4){
+    width: 31.33%;
+  }
+
+  &__img-block:nth-child(7n+5){
+    width:30.7%;
+  }
+
+  &__img-block:nth-child(7n+6){
+    width: 39%;
+  }
+
+  &__img-block:nth-child(7n+7){
+    width: 29%;
+  }
+
+  &__img-block {
+    overflow: hidden;
+    height: 280px;
+    margin: 2px;
+  }
+  &__img{
+    //width: 100%;
+    //height: 100%;
+    //overflow: hidden;
+    //margin-right: 4px;
+    //margin-bottom: 4px;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &:last-child{
+      //margin-right: 0;
+    }
+  }
+
+
+  &__descr {
+    margin-top: 106px;
+
+    &_subtitle {
+      @include fontFiraSans();
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #b6beca;
+      margin-bottom: 19px;
+      margin-top: 40px;
+    }
+
+    &_title {
+      @include fontFiraSans();
+      font-size: 26px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #768594;
+      max-width:400px;
+      margin-bottom: 19px;
+    }
+
+    &_text {
+      @include fontFiraSans();
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: justify;
+      color: #768594;
+      margin-right: 67px;
+    }
+  }
+
+  &__col{
+    width: 50%;
+  }
+
+  &__imgs {
+    position:relative;
+  }
+
+  &__big {
+    width: 85%;
+  }
+
+  &__small {
+    width: 47%;
+    position: absolute;
+    left: -32px;
+    bottom: -30px;
+  }
+
+
+  &__team {
+    margin-top: 101px;
+    margin-bottom: 40px;
+
+    &_subtitle{
+      @include fontFiraSans();
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #b6beca;
+    }
+
+    &_title{
+      @include fontFiraSans();
+      font-size: 26px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #768594;
+      margin: 20px 0;
+    }
+    &_text{
+      @include fontFiraSans();
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: center;
+      color: #768594;
+      margin: 0 auto;
+      margin-bottom: 34px;
+      max-width:453px;
+
+    }
+  }
+
+
+}

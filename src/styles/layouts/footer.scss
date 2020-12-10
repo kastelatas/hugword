@@ -1,0 +1,25 @@
+.footer {
+  background-color: $white;
+  @include flexCenterX();
+  height: $header-height;
+  padding-left: 43px;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding-right: 36px;
+  margin-top:  auto;
+
+  &__item {
+    @include make-column();
+    color: $primary-text;
+    align-items: flex-end;
+  }
+
+  &__policy {
+    margin-bottom: 15px;
+    padding-right: 6px;
+  }
+
+  &__rights {
+    font-size: 12px;
+  }
+}

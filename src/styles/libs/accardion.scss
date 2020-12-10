@@ -1,0 +1,72 @@
+.accordion {
+  border-radius: 10px;
+
+  &__item {
+    border-radius: 10px;
+  }
+}
+
+.accordion__item + .accordion__item {
+  margin-top: 8px;
+}
+
+.accordion__button {
+  background-color: $white;
+  position: relative;
+  border-radius: 10px;
+  color: $primary-text;
+  cursor: pointer;
+  padding: 20px 28px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  border: none;
+}
+
+.accordion__button:before {
+  @include absoluteY();
+  display: inline-block;
+  content: '';
+  height: 7.3px;
+  width: 11.3px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.312' height='7.125' viewBox='0 0 11.312 7.125' fill='%23b2bcc5'%3E%3Cpath d='M383.875,34.548l-5.7,5.609,1.4,1.426,5.7-5.609Zm-8.485-.072-1.426,1.4,5.608,5.7,1.427-1.4Z' transform='translate(-373.969 -34.469)'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 11.3px 7.3px ;
+  right: 27px;
+  color: $primary-text;
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11.31 7.09' fill='%23ffff'%3E%3Cg%3E%3Cg id='Слой_39'%3E%3Crect x='2.54' y='-0.47' width='2' height='8' transform='translate(3.54 8.53) rotate(-134.78)'/%3E%3Crect class='cls-1' x='7.49' y='1.25' width='2' height='6' transform='translate(-0.53 7.22) rotate(-44.78)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.accordion__button[aria-expanded='true'] {
+  background: linear-gradient(90deg, #fc4cc3, #ffb39d);
+  color: $white;
+  animation: fadein 0.35s ease-in;
+}
+
+[hidden] {
+  display: none;
+}
+
+.accordion__panel {
+  @include fontFiraSans();
+  line-height: 30px;
+  padding: 20px;
+  color: $primary-text;
+  font-size: 18px;
+  animation: fadein 0.35s ease-in;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

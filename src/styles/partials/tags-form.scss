@@ -1,0 +1,103 @@
+.tags-form {
+  background: #fff;
+  border-radius:10px;
+  width: 356px;
+  flex-basis: 460px;
+  //max-width: 356px;
+  //height: calc(100vh - 139px);
+  padding: 27px 29px;
+
+  &__icon-mail {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__title {
+    @include fontFiraSans();
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #768594;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+
+  form {
+    input[type=text] {
+      @include fontFiraSans();
+      color: #768594;
+      font-size: 16px;
+
+      &::-webkit-input-placeholder {color:#768594;}
+
+      &:first-child {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &__checkbox {
+    margin: 25px 0;
+
+    .checkbox {
+      margin-bottom: 15px;
+
+      &:before {
+        top: -2px;
+      }
+
+      &:after {
+        top: 5px;
+      }
+    }
+  }
+
+  &__text {
+    @include fontFiraSans();
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b6beca;
+    margin-top: 30px;
+    margin-bottom: 7px;
+  }
+
+  &__group-topics {
+    margin-top: 23px;
+    max-height: 400px;
+    height: 400px;
+    overflow-y: scroll;
+    @include styledScrollbar();
+    .tags-block {
+
+    }
+    .tag {
+      width: 100%;
+
+      span {
+        color: #b6beca;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    padding: 24px 0;
+    margin: 0 auto;
+    text-align: center;
+    .btn {
+      width: 125px;
+      height: 40px;
+    }
+
+  }
+}

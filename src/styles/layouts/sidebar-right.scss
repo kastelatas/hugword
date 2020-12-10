@@ -1,0 +1,29 @@
+.sidebar-right {
+  @include createSidebar($sidebar-width);
+  padding-right: $page-padding;
+
+  &__header {
+    @include flexCenterX();
+    justify-content: flex-end;
+    height: $header-height;
+    padding-right: 0;
+    //padding-right: 32px;
+  }
+
+  &__header-text {
+    color: $secondary-text;
+    margin-right: 7px;
+  }
+
+  &__content {
+    height: calc( 100% - 72px);
+    overflow-y: auto;
+    @include styledScrollbar();
+  }
+}
+
+.switcher {
+  padding: 5px 5px 5px 23px ;
+  background-color: $white;
+  border-radius: 20px;
+}

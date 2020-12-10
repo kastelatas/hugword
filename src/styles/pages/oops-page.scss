@@ -1,0 +1,28 @@
+.oops-page{
+  padding-top: 193px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    @include fontFiraSans;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #7d8b99;
+    margin-bottom: 30px;
+    margin-top: 36.9px;
+  }
+
+  .btn {
+    max-width: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}

@@ -1,0 +1,86 @@
+.help-page {
+  @include fontFiraSans();
+  text-align: center;
+  color: $primary-text;
+
+  a {
+    color: #3faaff;
+  }
+
+  &__content {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include fontSunday();
+    font-size: 36px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+
+  &__sub-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align:left;
+  }
+
+  &__button-block {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 40px;
+    .btn {
+      max-width: 167px;
+      margin-right: 20px;
+    }
+  }
+
+  &__btn-great {
+    max-width: 240px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    width: auto;
+  }
+
+  &__form {
+    padding: 33px 70px;
+    background-color: $white;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    > h2 {
+      font-size: 26px;
+      padding-bottom: 30px;
+    }
+
+
+
+  }
+  .select__control-is-focused,
+  .select__control{
+    box-shadow:none !important;
+  }
+
+  &__actions {
+    padding-top: 33px;
+    @include make-row();
+    justify-content: space-between;
+    padding-left: 61px;
+    max-width: 600px;
+    margin: 0 auto;
+    .btn {
+      width: 296px;
+    }
+
+    .btn + .btn {
+      margin-left: 8px;
+    }
+  }
+}

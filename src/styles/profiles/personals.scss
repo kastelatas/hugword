@@ -1,0 +1,82 @@
+.profile-personals {
+  position: relative;
+  @include fontFiraSans();
+  height: 100%;
+  background-color: $white;
+
+  &__form {
+    padding-left: 63px;
+  }
+
+  .radio-form {
+    @include flexCenterX()
+  }
+
+  &__line {
+    @include flexCenterX();
+    @include fontFiraSansLight();
+    color: $secondary-text;
+    font-size: 18px;
+
+    .edit-text {
+      margin-left: 8px;
+    }
+
+    & + & {
+      margin-top: 25px;
+    }
+
+    > svg {
+      margin-right: 19px;
+      flex-shrink: 0;
+    }
+
+    i {
+      @include fontFiraSans();
+      color: $primary-text;
+      font-size: 20px;
+    }
+  }
+
+  &__linetitle {
+    flex-shrink: 0;
+  }
+
+  &__action {
+    display: flex;
+    padding-top: 39px;
+
+    .btn + .btn {
+      margin-left: 20px;
+    }
+  }
+
+  &__title {
+    color: #768594;
+    display: inline-block;
+    margin-bottom: 38px;
+    font-size: 26px;
+  }
+
+  &__col {
+    @include make-column();
+
+    &:first-child {
+      margin-right: 81px;
+      flex-shrink: 0;
+    }
+
+    &:last-child {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  &__row {
+    @include make-row()
+  }
+
+  .input-group+.input-group {
+    margin-top: 10px;
+  }
+}

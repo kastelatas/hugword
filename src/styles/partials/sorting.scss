@@ -1,0 +1,14 @@
+.sorting {
+  @include make-row();
+  align-items: center;
+  color: $primary-text;
+
+  &__text {
+    display: inline-block;
+    color: $secondary-text;
+    margin-right: 7px;
+  }
+  &__list {
+    margin-right: 3px;
+  }
+}

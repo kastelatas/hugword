@@ -1,0 +1,32 @@
+.tag {
+  box-sizing: border-box;
+  @include flexCenterXY();
+  @include fontFiraSans();
+  display: inline-flex;
+  padding: 11px 6px;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+
+  &:hover {
+    border-color: darken($primary-color, 15%);
+    color: darken($primary-color, 10%);
+  }
+
+  &_close {
+    position: relative;
+    padding-right: 21px;
+    svg {
+      transform: rotate(45deg);
+    }
+    .btn-icon {
+      position: absolute;
+      right: 5px;
+      @include absoluteY();
+    }
+  }
+}

@@ -1,0 +1,35 @@
+
+@mixin flexCenterX() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexCenterY() {
+  display: flex;
+  justify-items: center;
+}
+
+@mixin flexCenterXY() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin absoluteXY() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absoluteX() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin absoluteY() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
